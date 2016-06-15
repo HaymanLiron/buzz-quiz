@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BuzzQuiz</title>
+    <link rel="stylesheet" type="text/css" href="./BuzzQuiz.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="col-lg-3 col-md-2 col-sm-1"></div>
+<div class="col-lg-6 col-md-8 col-sm-10 tag-box tag-box-v3 form-page">
+    <div class="headline"><h3>Insurance Underwriting<span style="float: right"><img class="heading-image" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Blue_Insurance_Logo.jpg" alt="Insurance Logo"></span></h3></div>
+
+    <h4 id="question1">Question 1 - Enter Name</h4><br>
+    <!--<div id="questionContainer"></div>-->
+    <!--Enter Name (text)-->
+    <!--<button onclick="nextQuestion();">Show next question!</button><br/>-->
+    <input type="text" class="form-control" id="nameInput" placeholder="Please enter name"/>
+    <button onclick="getName();"><a href="#question2">Submit!</a></button>
+    <br/>
+
+    <!--Select Gender (radio buttons)-->
+    <h4 id="question2">Question 2 - Select Gender</h4>
+    <div class="radio">
+        <label>
+            <input type="radio" name="gender" id="Male" checked="">Male
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="gender" id="Female">Female
+        </label>
+    </div>
+    <button onclick="getGender()"><a href="#question3">Submit!</a></button>
+    <p id="printGender"></p>
+
+    <!--Select existing diseases-->
+    <h4 id="question3">Question 3 - Select Existing Diseases</h4>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox" name="diseases" id="diabetes">Diabetes<br/>
+            <input type="checkbox" name="diseases" id="heartDisease">Heart Disease<br/>
+            <input type="checkbox" name="diseases" id="HIV">HIV/AIDS<br/>
+            <input type="checkbox" name="diseases" id="arthritis">Arthritis<br/>
+            <input type="checkbox" name="diseases" id="asthma">Asthma<br/>
+            <input type="checkbox" name="diseases" id="depression">Depression<br/>
+            <br/>
+        </label>
+    </div>
+    <button onclick="getDiseases()"><a href="#question4">Submit!</a></button>
+    <p id="checklistDiseases"></p>
+
+    <!--Other diseases (free input)-->
+    <h4 id="question4">Question 4 - Other Diseases</h4>
+    <label for="textInput">Any other diseases? (separate with commas)<br/></label>
+    <textarea class="form-control" rows="4" cols="50" id="textInput" placeholder="Input diseases here"></textarea>
+    <button onclick="checkDiseaseText();"><a href="#question5">Submit!</a></button>
+    <br/>
+    <p id="userDiseases"></p>
+
+    <!--Select Age-->
+    <h4 id="question5">Question 5 - Select Age</h4>
+    <label>
+        <select id="ageRange" class="form-control">
+            <option>18-25</option>
+            <option>25-50</option>
+            <option>50-70</option>
+            <option>70+</option>
+        </select>
+    </label>
+    <button onclick="getAge()">Submit!</button>
+    <p id="printAgeRange"></p>
+
+    <br/>
+    <button onclick="calcScore();">Calculate score!</button>
+    <p id="printScore"></p>
+
+</div>
+<div class="col-lg-3 col-md-2 col-sm-1"></div>
+
+
+<script src="./BuzzQuiz.js"></script>
+</body>
+</html>
