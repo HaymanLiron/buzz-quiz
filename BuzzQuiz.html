@@ -9,7 +9,10 @@
 <body>
 <div class="col-lg-3 col-md-2 col-sm-1"></div>
 <div class="col-lg-6 col-md-8 col-sm-10 tag-box tag-box-v3 form-page">
-    <div class="headline"><h3>Insurance Underwriting<span style="float: right"><img class="heading-image" src="https://upload.wikimedia.org/wikipedia/commons/0/08/Blue_Insurance_Logo.jpg" alt="Insurance Logo"></span></h3></div>
+    <div class="headline"><h3>Insurance Underwriting<span style="float: right"><img class="heading-image"
+                                                                                    src="https://upload.wikimedia.org/wikipedia/commons/0/08/Blue_Insurance_Logo.jpg"
+                                                                                    alt="Insurance Logo"></span></h3>
+    </div>
 
     <h4 id="question1">Question 1 - Enter Name</h4><br>
     <!--<div id="questionContainer"></div>-->
@@ -37,15 +40,14 @@
     <!--Select existing diseases-->
     <h4 id="question3">Question 3 - Select Existing Diseases</h4>
     <div class="checkbox">
-        <label>
-            <input type="checkbox" name="diseases" id="diabetes">Diabetes<br/>
-            <input type="checkbox" name="diseases" id="heartDisease">Heart Disease<br/>
-            <input type="checkbox" name="diseases" id="HIV">HIV/AIDS<br/>
-            <input type="checkbox" name="diseases" id="arthritis">Arthritis<br/>
-            <input type="checkbox" name="diseases" id="asthma">Asthma<br/>
-            <input type="checkbox" name="diseases" id="depression">Depression<br/>
-            <br/>
-        </label>
+        <label><input type="checkbox" name="diseases" value="0" title="Diabetes">Diabetes</label><br/>
+        <label><input type="checkbox" name="diseases" value="1">Heart Disease</label><br/>
+        <label><input type="checkbox" name="diseases" value="2">HIV/AIDS</label><br/>
+        <label><input type="checkbox" name="diseases" value="3">Arthritis</label><br/>
+        <label><input type="checkbox" name="diseases" value="4">Asthma</label><br/>
+        <label><input type="checkbox" name="diseases" value="5">Depression</label><br/>
+        <br/>
+
     </div>
     <button onclick="getDiseases()"><a href="#question4">Submit!</a></button>
     <p id="checklistDiseases"></p>
