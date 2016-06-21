@@ -19,7 +19,6 @@
     <!--Enter Name (text)-->
     <!--<button onclick="nextQuestion();">Show next question!</button><br/>-->
     <input type="text" class="form-control" id="nameInput" placeholder="Please enter name"/>
-    <button onclick="getName();"><a href="#question2">Submit!</a></button>
     <br/>
 
     <!--Select Gender (radio buttons)-->
@@ -34,29 +33,25 @@
             <input type="radio" name="gender" id="Female">Female
         </label>
     </div>
-    <button onclick="getGender()"><a href="#question3">Submit!</a></button>
     <p id="printGender"></p>
 
     <!--Select existing diseases-->
     <h4 id="question3">Question 3 - Select Existing Diseases</h4>
     <div class="checkbox">
-        <label><input type="checkbox" name="diseases" value="0" title="Diabetes">Diabetes</label><br/>
-        <label><input type="checkbox" name="diseases" value="1">Heart Disease</label><br/>
-        <label><input type="checkbox" name="diseases" value="2">HIV/AIDS</label><br/>
-        <label><input type="checkbox" name="diseases" value="3">Arthritis</label><br/>
-        <label><input type="checkbox" name="diseases" value="4">Asthma</label><br/>
-        <label><input type="checkbox" name="diseases" value="5">Depression</label><br/>
+        <label><input type="checkbox" name="diseases" id="diabetes" value="0">Diabetes</label><br/>
+        <label><input type="checkbox" name="diseases" id="heartDisease" value="1">Heart Disease</label><br/>
+        <label><input type="checkbox" name="diseases" id="HIV" value="2">HIV/AIDS</label><br/>
+        <label><input type="checkbox" name="diseases" id="arthritis" value="3">Arthritis</label><br/>
+        <label><input type="checkbox" name="diseases" id="asthma" value="4">Asthma</label><br/>
+        <label><input type="checkbox" name="diseases" id="depression" value="5">Depression</label><br/>
         <br/>
-
     </div>
-    <button onclick="getDiseases()"><a href="#question4">Submit!</a></button>
     <p id="checklistDiseases"></p>
 
     <!--Other diseases (free input)-->
     <h4 id="question4">Question 4 - Other Diseases</h4>
     <label for="textInput">Any other diseases? (separate with commas)<br/></label>
     <textarea class="form-control" rows="4" cols="50" id="textInput" placeholder="Input diseases here"></textarea>
-    <button onclick="checkDiseaseText();"><a href="#question5">Submit!</a></button>
     <br/>
     <p id="userDiseases"></p>
 
@@ -70,7 +65,6 @@
             <option>70+</option>
         </select>
     </label>
-    <button onclick="getAge()">Submit!</button>
     <p id="printAgeRange"></p>
 
     <br/>
@@ -79,7 +73,6 @@
 
 </div>
 <div class="col-lg-3 col-md-2 col-sm-1"></div>
-
 
 <script src="./BuzzQuiz.js"></script>
 </body>
