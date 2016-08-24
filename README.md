@@ -1,3 +1,3 @@
 # buzz-quiz
-A silly quiz to learn user input in web development /n
+A simple quiz to learn user input in web development 
 using javascript.
